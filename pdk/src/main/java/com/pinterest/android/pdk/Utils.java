@@ -4,15 +4,10 @@ import android.graphics.Bitmap;
 import android.util.Base64;
 import android.util.Log;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.client.utils.URLEncodedUtils;
-
-
 import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 
 public class Utils {
@@ -58,22 +53,22 @@ public class Utils {
         return _dateFormat;
     }
 
-    public static String getUrlWithQueryParams(String url, List<NameValuePair> params) {
-        if (url == null) {
-            return null;
-        }
-
-        url = url.replace(" ", "%20");
-
-        if(!url.endsWith("?"))
-            url += "?";
-
-        if (params != null && params.size() > 0) {
-            String paramString = URLEncodedUtils.format(params, "utf-8");
-            url += paramString;
-        }
-        return url;
-    }
+//    public static String getUrlWithQueryParams(String url, List<BasicNameValuePair> params) {
+//        if (url == null) {
+//            return null;
+//        }
+//
+//        url = url.replace(" ", "%20");
+//
+//        if(!url.endsWith("?"))
+//            url += "?";
+//
+//        if (params != null && params.size() > 0) {
+//            String paramString = URLEncodedUtils.format(params, "utf-8");
+//            url += paramString;
+//        }
+//        return url;
+//    }
 
     public static String base64String(Bitmap bitmap) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();

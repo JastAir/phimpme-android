@@ -192,13 +192,13 @@
         <item name="cardElevation">@dimen/card_elevation</item>
     </style>
 
-    <style name="Theme.ownCloud.Dialog.ButtonBar" parent="style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <!-- Making sure, the button bar uses parent width and is not restricted in height -->
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:height">@null</item>
-        <item name="android:minHeight">@null</item>
-    </style>
+    <!--<style name="Theme.ownCloud.Dialog.ButtonBar" parent="style/Widget.AppCompat.Button.ButtonBar.AlertDialog">-->
+        <!--&lt;!&ndash; Making sure, the button bar uses parent width and is not restricted in height &ndash;&gt;-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:height">@null</item>-->
+        <!--<item name="android:minHeight">@null</item>-->
+    <!--</style>-->
 
     <style name="ownCloud.Dialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">@color/colorAccent</item>
